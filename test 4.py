@@ -72,7 +72,7 @@ while continuer==1:
             text_rect_obj.center = (480, 111)
             main.blit(text_surface_obj, text_rect_obj)
 
-            #ligne de séparation
+            #ligne de sÃƒÂ©paration
             pygame.draw.line(main, black, (276, 131), (684, 131), 2)
 
             #bouton mode
@@ -132,7 +132,7 @@ while continuer==1:
             text_rect_obj.center = (480, 111)
             main.blit(text_surface_obj, text_rect_obj)
 
-            #ligne de séparation
+            #ligne de sÃƒÂ©paration
             pygame.draw.line(main, white, (276, 131), (684, 131), 2)
 
             #bouton mode
@@ -182,8 +182,8 @@ while continuer==1:
             pygame.draw.rect(main,nuit, (0, 0, 960, 540))
             pygame.draw.rect(main,grey_p, (340, 130, 281, 281))
 
-        #détecter clic sur :
-        #paramètre
+        #dÃƒÂ©tecter clic sur :
+        #paramÃƒÂ¨tre
         if event.type == MOUSEBUTTONUP and event.button==1 and event.pos[0] > 41 and event.pos[0] < 69 and event.pos[1] < 69 and event.pos[1] > 41:
             show=1
         #retour
@@ -218,11 +218,11 @@ while continuer==1:
                 text_rect_obj = text_surface_obj.get_rect()
                 text_rect_obj.center = (480, 410)
                 main.blit(text_surface_obj, text_rect_obj)
-            #clic sur le bouton jouer (event.pos[0]= abcisse)
+            #clic sur le bouton jouer (event.pos[0]= abscisse)
             if event.type == MOUSEBUTTONUP and event.button==1 and event.pos[0] > 394 and event.pos[0] < 526 and event.pos[1] < 428 and event.pos[1] > 390:
                 print("Jouer !")
 
-        #clic sur bouton paramètre en mode nuit
+        #clic sur bouton paramÃƒÂ¨tre en mode nuit
         if event.type == MOUSEBUTTONUP and event.button==1 and event.pos[0] > 41 and event.pos[0] < 69 and event.pos[1] < 69 and event.pos[1] > 41 and nighton==1:
             shownight=0
         #clic sur retour en mode nuit
@@ -268,3 +268,5 @@ while continuer==1:
 
 
         pygame.display.update()
+
+pygame.quit()
